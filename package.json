@@ -12,7 +12,7 @@
     "dev": "run-s uniform:pull:manifest dev:next",
     "dev:next": "next dev --port 3000",
     "build": "run-s uniform:pull:manifest build:next",
-    "build:next": "next build",
+    "build:next": "next build && next export",
     "start": "next start",
     "lint": "eslint src",
     "uniform:pull:manifest": "uniform context manifest download --output ./src/context/manifest.json",
